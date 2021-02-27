@@ -7,7 +7,7 @@ const PORT = 80;
 app.use("/", express.static(path.join(__dirname, "public")));
 
 app.get("/teste", (req,res)=>{
-    res.send("<h1> OLA MUNDO, voce esta na primeira pagina, TE AMO VIDAAA </h1>")
+    res.sendFile(path.join(__dirname, "public/index.html"))
 })
 
 app.listen(PORT, ()=>{
