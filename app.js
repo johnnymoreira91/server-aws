@@ -4,11 +4,7 @@ const app = express();
 const PORT = 3001;
 
 app.get("/", (req,res)=>{
-    res.json({
-        status: 200,
-        Body: `Server with express running on port ${PORT}`,
-        executed: "You are looking the Home Page blabla"
-    })
+    res.send("<h1> OLA MUNDO </h1>")
 })
 
 app.listen(PORT, ()=>{
