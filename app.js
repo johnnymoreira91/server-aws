@@ -6,7 +6,8 @@ const PORT = 3001;
 app.get("/", (req,res)=>{
     res.json({
         status: 200,
-        Body: `Server with express running on port ${PORT}`
+        Body: `Server with express running on port ${PORT}`,
+        executed: "You are looking the Home Page"
     })
 })
 
